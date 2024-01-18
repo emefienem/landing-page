@@ -15,7 +15,7 @@
         width: 100%;
     }
 
-    .upper-image{
-        display: none;
+    .upper-image {
+        top: -117%;
     }
 }

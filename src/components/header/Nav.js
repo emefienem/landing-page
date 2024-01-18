@@ -16,7 +16,12 @@ const Nav = () => {
 
   return (
     <header>
-      <img src="/images/logo.png" alt="" />
+      <div className="logo">
+        <img src="/images/logo.png" alt="" />
+        <div className="menu" onClick={toggleMenu}>
+          <FontAwesomeIcon icon={faBars} className="menu" />
+        </div>
+      </div>
       <ul style={styleMenu}>
         <li>Work</li>
         <li>Work</li>
@@ -25,9 +30,6 @@ const Nav = () => {
           <FontAwesomeIcon icon={faClose} className="menu" />
         </li>
       </ul>
-      <div className="menu" onClick={toggleMenu}>
-        <FontAwesomeIcon icon={faBars} className="menu" />
-      </div>
     </header>
   );
 };

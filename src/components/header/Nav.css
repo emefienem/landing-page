@@ -33,6 +33,12 @@ header ul li:hover {
     display: none;
 }
 
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 @media (max-width: 720px) {
     header ul {
         position: fixed;
@@ -40,7 +46,7 @@ header ul li:hover {
         left: 0;
         width: 100%;
         height: 100vh;
-        background: whitesmoke;
+        background: gray;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -58,7 +64,7 @@ header ul li:hover {
     header ul li .menu {
         position: absolute;
         top: 20px;
-        left: 1px;
+        left: 10px;
     }
 
     header {
@@ -67,5 +73,16 @@ header ul li:hover {
 
     ul li{
         color: black;
+    }
+
+    .logo img{
+        width: 70%;
+    }
+
+    .logo .menu{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: #fff;
     }
 }

@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="this-bg">
       <div className="robotM">
-        <div className="robot-text">
+        <div className="robots-text">
           <h2>
             Be among the first to
             <br />
