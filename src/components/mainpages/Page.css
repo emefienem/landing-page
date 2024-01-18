@@ -12,10 +12,10 @@
 @media (max-width: 799px) {
     .lower-image{
         object-fit: contain;
-        width: 100%;
+        width: 120%;
     }
 
     .upper-image {
-        top: -117%;
+        top: -98%;
     }
 }

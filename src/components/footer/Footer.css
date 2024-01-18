@@ -87,7 +87,7 @@
 @media (max-width: 500px) {
     .robot2 {
         position: absolute;
-        margin-top: 30vh;
+        margin-top: 35vh;
         right: 1%;
     }
 
@@ -123,6 +123,7 @@
     .robots-text {
         text-align: center;
         margin-top: 10px;
+        margin-left: 50px;
     }
         
     .robots-text h2 {
