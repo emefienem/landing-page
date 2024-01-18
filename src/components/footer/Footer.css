@@ -1,0 +1,100 @@
+.robot2 {
+    position: absolute;
+    right: 150px;
+}
+
+.robot2 img {
+    object-fit: contain;
+    height: 400px;
+}
+
+.footer{
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 10px;
+}
+
+.first{
+    text-align: start;
+    margin-left: 40px;
+}
+
+.first p{
+    color: white;
+    font-size: 14px;
+}
+
+.input{
+    display: flex;
+}
+
+.input input{
+    outline: none;
+    color: #1F1548;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.arrow{
+    position: absolute;
+    left: 16%;
+    margin-top: 1%;
+}
+
+.second{
+    margin-left: 35vh;
+}
+
+.second ul li {
+    margin-top: 12px;
+    text-align: start;
+}
+
+.third {
+    margin-left: 35vh;
+}
+
+.third ul li {
+    margin-top: 12px;
+    text-align: start;
+}
+
+
+@media (max-width: 500px) {
+    .robot2 {
+        position: absolute;
+        margin-top: 30vh;
+        right: 10%;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50vh;
+    }
+
+    .first {
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    .second ul li {
+        display: none;
+    }
+
+    .third ul li {
+        display: none;
+    }
+
+    .robot-footer{
+        display: none;
+    }
+
+    .arrow {
+        position: absolute;
+        left: 24vh;
+        margin-top: 3%;
+    }
+}

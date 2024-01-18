@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+}
+
+.upper-image {
+    position: absolute;
+    top: -34%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 799px) {
+    .lower-image{
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .upper-image{
+        display: none;
+    }
+}

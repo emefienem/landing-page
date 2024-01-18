@@ -1,0 +1,178 @@
+.feature-main{
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature p{
+    color: rgb(92, 62, 212);
+    margin: 0 auto;
+}
+
+.feature h2{
+    color: #fff;
+
+}
+
+.features-box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transition: all 1s ease-in-out;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.box2{
+    background-color: #2b1a6d;
+    border-radius: 15px;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+}
+
+.box2 h1{
+    font-size: 20px;
+    color: #fff;
+}
+
+.box2 p{
+    color: gray;
+    font-size: 15px;
+}
+
+.box2 button{
+    border: none;
+    color: #583acf;
+    background: transparent;
+    cursor: pointer;
+}
+
+.icon{
+    margin-top: 20px;
+    background-color: #2b1a6d;
+    border: 1px solid #2b1a6d;
+    border-radius: 50%;
+}
+
+.robotM{
+    margin-top: 150px;
+    display: flex;
+}
+
+.robot {
+    position: absolute; 
+    right: 150px;
+}
+
+.robot img{
+    object-fit: contain;
+    height: 400px;
+}
+
+.robot-text{
+    margin-left: 40px;
+    margin-top: 30px;
+    text-align: start;
+}
+
+.robot-text h2{
+    color: #fff;
+    font-size: 50px;
+}
+
+.robot-text p{
+    color: #fff;
+}
+
+.robot-text button{
+    background: rgb(92, 62, 212);
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+}
+
+.another{
+    margin-top: 150px;
+}
+
+.another h2{
+    color: #fff;
+    font-size: 40px;
+}
+
+.another p{
+    color: #fff;
+}
+.data{
+    margin-top: 30px;
+}
+
+.data img{
+    width: 80%;
+    height: 280px
+}
+
+@media (max-width: 799px) {
+    .features-box{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);   
+        justify-content: center;
+        width: 100%;
+    }
+    .box2{
+        margin: auto;
+    }
+
+    .feature p {
+        text-align: center;
+    }
+
+    .robot-text{
+        text-align: center;
+    }
+        
+    .robot-text h2 {
+        font-size: 25px;
+    }
+
+    .robot-text p {
+        font-size: 12px;
+        color: gray;
+    }
+
+    .robot {
+        position: absolute;
+        margin-top: 30vh;
+    }
+
+        
+    .robot img {
+        object-fit: contain;
+        height: 250px;
+    }
+
+    .another{
+        margin-top: 45vh;
+    }
+
+    .another h2 {
+        font-size: 25px;
+    }
+
+    .another p {
+        font-size: 12px;
+        color: gray;
+    }
+}
+
+/* @media screen and (max-width: 500px) {
+    .robot {
+        position: absolute;
+        margin-top: 42vh;
+    }
+} */
