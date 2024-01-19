@@ -7,6 +7,7 @@ import {
   faWallet,
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Features = () => {
   return (
@@ -46,8 +47,13 @@ const Features = () => {
               justifyContent: "center",
             }}
           >
-            <button>Get Started</button>
-            <FontAwesomeIcon icon={faArrowRight} style={{ color: "#583acf" }} />
+            <Link to="/started">
+              <button>Get Started</button>
+            </Link>
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              style={{ color: "#583acf", marginTop: "15px" }}
+            />
           </div>
         </div>
 
@@ -81,8 +87,13 @@ const Features = () => {
               justifyContent: "center",
             }}
           >
-            <button>Get Started</button>
-            <FontAwesomeIcon icon={faArrowRight} style={{ color: "#583acf" }} />
+            <Link to="/started">
+              <button>Get Started</button>
+            </Link>
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              style={{ color: "#583acf", marginTop: "15px" }}
+            />
           </div>
         </div>
 
@@ -116,17 +127,21 @@ const Features = () => {
               justifyContent: "center",
             }}
           >
-            <button>Get Started</button>
-            <FontAwesomeIcon icon={faArrowRight} style={{ color: "#583acf" }} />
+            <Link to="/started">
+              <button>Get Started</button>
+            </Link>
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              style={{ color: "#583acf", marginTop: "15px" }}
+            />
           </div>
         </div>
       </div>
       <div className="robotM">
         <div className="robot-text">
           <h2>
-            Ready to elevate your crypto
-            <br />
-            trading experience?
+            Ready to elevate your <br />
+            crypto trading <br /> experience?
           </h2>
           <p>
             Start your free trial now and unlock a world of unlimited
@@ -136,7 +151,9 @@ const Features = () => {
             <br />
             smarter, more profitable trading. Let's make every trade count.
           </p>
-          <button>Get Started</button>
+          <Link to="/started">
+            <button>Get Started</button>
+          </Link>
         </div>
         <div className="robot">
           <img src="/images/robot.png" alt="" />
@@ -145,12 +162,14 @@ const Features = () => {
 
       <div className="another">
         <h2>
-          Buy and Sell with the lowest <br /> fees in the industry
+          Buy and Sell with the <br />
+          lowest fees in the industry
         </h2>
         <p>
           Maximize your profits and minimize costs as you navigate the crypto.
-          Join us <br />
-          and take control of your trades with fees that won't weigh you down.
+          Join us and
+          <br />
+          take control of your trades with fees that won't weigh you down.
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <button
@@ -159,11 +178,16 @@ const Features = () => {
               color: " #583acf",
               background: "transparent",
               cursor: "pointer",
+              fontSize: "20px",
+              marginTop: "15px",
             }}
           >
             Learn More
           </button>
-          <FontAwesomeIcon icon={faArrowRight} style={{ color: "#583acf" }} />
+          <FontAwesomeIcon
+            icon={faArrowRight}
+            style={{ color: "#583acf", marginTop: "17px" }}
+          />
         </div>
         <div className="data">
           <img src="/images/table.png" alt="" />

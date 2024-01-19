@@ -7,11 +7,14 @@
 .feature p{
     color: rgb(92, 62, 212);
     margin: 0 auto;
+    font-size: 20px;
 }
 
 .feature h2{
     color: #fff;
-
+    font-size: 50px;
+    margin-top: 0;
+    font-weight: 400;
 }
 
 .features-box{
@@ -20,27 +23,27 @@
     grid-template-columns: repeat(3, 1fr);
     transition: all 1s ease-in-out;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 15px;
 }
 
 .box2{
     background-color: #2b1a6d;
     border-radius: 15px;
     margin: auto;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 350px;
 }
 
 .box2 h1{
-    font-size: 20px;
     color: #fff;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .box2 p{
-    color: gray;
-    font-size: 15px;
+    color: #898CA9;
+    font-size: 20px;
 }
 
 .box2 button{
@@ -48,6 +51,7 @@
     color: #583acf;
     background: transparent;
     cursor: pointer;
+    margin-top: 15px;
 }
 
 .icon{
@@ -58,62 +62,74 @@
 }
 
 .robotM{
-    margin-top: 150px;
+    margin-top: 10%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .robot {
     position: absolute; 
-    right: 150px;
+    right: 19%;
 }
 
 .robot img{
     object-fit: contain;
-    height: 400px;
 }
 
 .robot-text{
-    margin-left: 40px;
-    margin-top: 30px;
+    margin-left: 10%;
+    margin-top: 15%;
     text-align: start;
 }
 
 .robot-text h2{
     color: #fff;
     font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 8vh;
 }
 
 .robot-text p{
     color: #fff;
+    margin-top: 0;
+    font-size: 17px;
 }
 
 .robot-text button{
     background: rgb(92, 62, 212);
     color: #fff;
-    padding: 10px 25px;
+    padding: 15px 25px;
     border: none;
     border-radius: 8px;
+    margin-top: 25px;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .another{
-    margin-top: 150px;
+    margin-top: 25%;
 }
 
 .another h2{
     color: #fff;
-    font-size: 40px;
+    font-size: 45px;
+    margin-bottom: 0;
+    font-weight: 400;
 }
 
 .another p{
     color: #fff;
+    margin-top: 10px;
 }
+
 .data{
     margin-top: 30px;
 }
 
 .data img{
-    width: 80%;
-    height: 280px
+    width: 70%;
+    height: 350px
 }
 
 @media (max-width: 799px) {
@@ -146,6 +162,7 @@
         
     .robot-text h2 {
         font-size: 25px;
+        line-height: 4vh;
     }
 
     .robot-text p {
@@ -155,7 +172,7 @@
 
     .robot {
         position: absolute;
-        margin-top: 30vh;
+        margin-top: 45vh;
     }
 
         
@@ -170,6 +187,7 @@
 
     .another h2 {
         font-size: 25px;
+        font-weight: 400;
     }
 
     .another p {
@@ -177,10 +195,3 @@
         color: gray;
     }
 }
-
-/* @media screen and (max-width: 500px) {
-    .robot {
-        position: absolute;
-        margin-top: 42vh;
-    }
-} */
