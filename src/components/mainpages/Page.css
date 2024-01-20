@@ -10,9 +10,8 @@
     color: #fff;
 }
 
-
 .some-text h2{
-    font-size: 50px;
+    font-size: 60px;
     color: #fff;
     margin-bottom: 0;
 }
@@ -30,7 +29,7 @@
 .some-text button{
     background: rgb(92, 62, 212);
     color: #fff;
-    padding: 15px 25px;
+    padding: 15px 45px;
     border: none;
     border-radius: 8px;
     margin-top: 25px;
@@ -39,16 +38,27 @@
 }
 
 @media (max-width: 799px) {
+    .some-text{
+        max-width: 500px;
+    }
     .some-text h2 {
-        font-size: 40px;
+        font-size: 30px;
         color: #fff;
         margin-bottom: 0;
     }
 
     .some-text p {
         font-size: 10px;
-        line-height: 4vh;
+        max-width: 200px;
+        word-wrap: break-word;
         margin-top: 10px;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        margin-left: 100px;
+    }
+
+    .some-text button {
+        padding: 15px 65px;
     }
 }

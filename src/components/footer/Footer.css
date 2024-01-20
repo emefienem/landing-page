@@ -21,7 +21,6 @@
     margin-left: 10%;
     margin-top: 10%;
     text-align: start;
-    white-space: normal;
 }
 
 .robots-text h2 {
@@ -30,12 +29,15 @@
     font-size: 54px;
     font-weight: 400;
     margin-bottom: 0;
+    max-width: 300px;
+    /* word-wrap: break-word; */
 }
 
 .robots-text p {
     color: #fff;
     margin-top: 15px;
     font-size: 18px;
+    max-width: 200px;
 }
 
 .robots-text button {
@@ -109,7 +111,7 @@
 @media (max-width: 500px) {
     .robot2 {
         position: absolute;
-        margin-top: 50vh;
+        margin-top: 38vh;
         right: 1%;
     }
 
@@ -150,18 +152,19 @@
     .robots-text {
         text-align: center;
         margin-top: 10px;
-        margin-left: 25%;
     }
         
     .robots-text h2 {
-        font-size: 25px;
-        line-height: 4vh;
+        font-size: 20px;
+        line-height: 3vh;
+        margin-left: 7%;
     }
         
     .robots-text p {
-        font-size: 12px;
+        font-size: 15px;
         color: gray;
-        white-space: nowrap;
+        max-width: 350px;
+        word-wrap: break-word;
     }
 
     .input input{

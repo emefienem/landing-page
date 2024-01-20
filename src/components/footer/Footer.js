@@ -9,15 +9,13 @@ const Footer = () => {
     <div className="this-bg">
       <div className="robotMs">
         <div className="robots-text">
-          <h2>
-            Be among <br /> the first to <br /> experience <br /> Swifty App
-          </h2>
+          <h2>Be among the first to experience Swifty App</h2>
           <p>
             Click the button to join the waitlist
-            <br />
+            {/* <br /> */}
             and chat with swifty on Telegram. <br />
             Enjoy early access, exclusive
-            <br />
+            {/* <br /> */}
             perks and front-row seats to the <br />
             future of trading.
           </p>
