@@ -8,10 +8,13 @@ import {
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { useScroll } from "../GlobalState";
 
 const Features = () => {
+  const { featureRef, rateRef } = useScroll();
+
   return (
-    <div className="feature-main">
+    <div className="feature-main" ref={featureRef}>
       <div className="feature">
         <p>Top Features</p>
         <h2>Key Features of Swiftyex(Bot)</h2>
@@ -139,17 +142,12 @@ const Features = () => {
       </div>
       <div className="robotM">
         <div className="robot-text">
-          <h2>
-            Ready to elevate your <br />
-            crypto trading <br /> experience?
-          </h2>
+          <h2>Ready to elevate your crypto trading experience?</h2>
           <p>
             Start your free trial now and unlock a world of unlimited
-            transactions,
-            <br />
-            intelligent features, and seamless excahnge. Join us on the path to{" "}
-            <br />
-            smarter, more profitable trading. Let's make every trade count.
+            transactions, intelligent features, and seamless excahnge. Join us
+            on the path to smarter, more profitable trading. Let's make every
+            trade count.
           </p>
           <Link to="/started">
             <button>Get Started</button>
@@ -167,11 +165,13 @@ const Features = () => {
         </h2>
         <p>
           Maximize your profits and minimize costs as you navigate the crypto.
-          Join us and
-          <br />
-          take control of your trades with fees that won't weigh you down.
+          Join us and take control of your trades with fees that won't weigh you
+          down.
         </p>
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          style={{ display: "flex", justifyContent: "center" }}
+          ref={rateRef}
+        >
           <button
             style={{
               border: "none",

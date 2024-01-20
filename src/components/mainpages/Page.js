@@ -1,11 +1,15 @@
 import React from "react";
 import "./Page.css";
 import { Link } from "react-router-dom";
+import { useScroll } from "../GlobalState";
 
 const Page = () => {
+  const { homeRef } = useScroll();
+  console.log("homeref:", homeRef);
+
   return (
     <>
-      <div className="container">
+      <div className="container" ref={homeRef}>
         <div className="some-text">
           <h2>
             Step into the future of crypto trading with <br />

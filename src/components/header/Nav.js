@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
-
+import { useScroll } from "../GlobalState";
 import "./Nav.css";
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menu, setMenu] = useState(false);
+  const { scrollToSection, homeRef, featureRef, rateRef, telegramRef } =
+    useScroll();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,17 +45,45 @@ const Nav = () => {
               className="menu"
               style={{
                 background: "#583acf",
-                padding: "10px",
+                padding: "13px",
                 borderRadius: "5px",
               }}
             />
           </div>
         </div>
         <ul style={styleMenu}>
-          <li>Home</li>
-          <li>Features</li>
-          <li>Rate</li>
-          <li>Telegram</li>
+          <li
+            onClick={() => {
+              scrollToSection(homeRef);
+              toggleMenu();
+            }}
+          >
+            Home
+          </li>
+          <li
+            onClick={() => {
+              scrollToSection(featureRef);
+              toggleMenu();
+            }}
+          >
+            Features
+          </li>
+          <li
+            onClick={() => {
+              scrollToSection(rateRef);
+              toggleMenu();
+            }}
+          >
+            Rate
+          </li>
+          <li
+            onClick={() => {
+              scrollToSection(telegramRef);
+              toggleMenu();
+            }}
+          >
+            Telegram
+          </li>
           <li onClick={toggleMenu}>
             <FontAwesomeIcon
               icon={faClose}

@@ -1,11 +1,12 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Features, Footer, Header, Page, Started } from "./components";
+import { ScrollProvider } from "./components/GlobalState";
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/started" element={<Started />} />
@@ -17,11 +18,12 @@ function App() {
 
 const Home = () => {
   return (
-    <div>
+    <ScrollProvider>
+      <Header />
       <Page />
       <Features />
       <Footer />
-    </div>
+    </ScrollProvider>
   );
 };
 

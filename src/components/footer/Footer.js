@@ -3,21 +3,20 @@ import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { useScroll } from "../GlobalState";
 
 const Footer = () => {
+  const { telegramRef } = useScroll();
+
   return (
     <div className="this-bg">
       <div className="robotMs">
-        <div className="robots-text">
+        <div className="robots-text" ref={telegramRef}>
           <h2>Be among the first to experience Swifty App</h2>
           <p>
-            Click the button to join the waitlist
-            {/* <br /> */}
-            and chat with swifty on Telegram. <br />
-            Enjoy early access, exclusive
-            {/* <br /> */}
-            perks and front-row seats to the <br />
-            future of trading.
+            Click the button to join the waitlist and chat with swifty on Enjoy
+            early access, exclusive perks and front-row seats to the future of
+            trading.
           </p>
           <Link to="/started">
             <button>Get Started</button>
