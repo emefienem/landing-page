@@ -80,6 +80,7 @@
     margin-left: 10%;
     margin-top: 15%;
     text-align: start;
+    max-width: 500px;
 }
 
 .robot-text h2{
@@ -87,7 +88,7 @@
     font-size: 50px;
     font-weight: 400;
     margin-bottom: 20px;
-    line-height: 8vh;
+    /* line-height: 8vh; */
 }
 
 .robot-text p{
