@@ -47,6 +47,8 @@ const Nav = () => {
                 background: "#583acf",
                 padding: "13px",
                 borderRadius: "5px",
+                position: "absolute",
+                top: "0",
               }}
             />
           </div>
